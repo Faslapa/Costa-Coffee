@@ -1,0 +1,78 @@
+<!DOCTYPE html> 
+<html> 
+<style> 
+
+    body {
+     background-image: url("12.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+       }
+
+   
+      
+    input[type=text], 
+    input[type=password] { 
+        width: 100%; 
+        padding: 12px 20px; 
+        margin: 8px 0; 
+        display: inline-block; 
+        border: 2px solid #ccc; 
+        box-sizing: border-box; 
+    } 
+  
+      
+    button { 
+    
+        color: white; 
+        padding: 15px 20px; 
+        margin: 8px 0; 
+        cursor: pointer; 
+        width: 100%; 
+    } 
+    
+      
+    .cancelbtn { 
+        padding: 15px 20px; 
+        
+    } 
+    
+      
+    .cancelbtn, 
+    .signupbtn { 
+        float: left; 
+        width: 50%; 
+    } 
+   
+      
+    
+      
+    
+</style> 
+  
+<body> 
+  
+    <h2>Signup Form</h2> 
+   
+    <form action="/action_page.php" > 
+        
+            <label><b>First Name</b></label> 
+            <input type="text" name="fname" autofocus> <br><br>
+  
+            <label><b>Last Name</b></label> 
+            <input type="text"  name="lname" required> <br><br>
+  
+            <label><b>E-mail Id</b></label> 
+            <input type="text" name="email" required> <br><br>
+            <label><b>Password</b></label> 
+            <input type="password" name="ppassword" required> 
+            
+            
+                <button type="button" class="cancelbtn" style="color:black;">Cancel</button> 
+                <button type="submit" class="signupbtn" style="color:black;">Sign Up</button> 
+            
+       
+    </form> 
+  
+</body> 
+  
+</html> 

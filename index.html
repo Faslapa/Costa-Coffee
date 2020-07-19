@@ -7,15 +7,18 @@
 
     <!-- Bootstrap CSS -->
     
-    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
    
    
     <style> 
       #header{
         background-image: url("pic1.jpg");
-        height:300px;
+        height:500px;
         background-repeat: no-repeat;
         background-size: cover;
+		padding: 20 px;
         
       }
       #text {
@@ -28,32 +31,20 @@
     .heading {
        font-size: 25px;
        margin-right: 25px;
+	   padding: 20px;
              }
     
 	  meter{  
 	    width: 300px;  
-      height: 30px;  
+        height: 30px;  
         }
-  	details {
-	    font: 16px "Open Sans", Calibri, sans-serif;
-	    width: 620px;
-          	}
-	details > summary {
-	  padding: 2px 6px;
-	  width: 15em;
-	  background-color: #ddd;
-	  border: none;
-    box-shadow: 3px 3px 4px black;
-    cursor: pointer;
-	}
+     #Survey
+	 {
+		 padding:20px; 
+		 margin: 0 auto;
+		 margin-left: 20px;
+	 }
 	
-	details > p {
-	  border-radius: 0 0 10px 10px;
-	  background-color: #ddd;
-	  padding: 2px 6px;
-	  margin: 0;
-	  box-shadow: 3px 3px 4px black;
-     }
 
   
     
@@ -65,14 +56,56 @@
     </head>
     
     <body>
+		<nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
+			<a href="#" class="navbar-brand">Costa Coffee</a>
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navLinks">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a href="" class="nav-link">HOME</a>
+					</li>
+					<li class="nav-item">
+						<a href="" class="nav-link">ABOUT US</a>
+					</li>
+					<li class="nav-item">
+						<a href="" class="nav-link">OUR MENU</a>
+					</li>
+					<li class="nav-item">
+						<a href="signup.html" class="nav-link">SIGN UP</a>
+					</li>
+				</ul>
+				
+			</div>
+			<nav class="navbar navbar-inverse">
+				<div class="container-fluid">
+				  <ul class="nav navbar-nav navbar-right">
+					<li><a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+				  </ul>
+				</div>
+			  </nav>
+			
+	
+		</nav>
+		
       
       
      
         <section id="header" class="jumbotron text-center">
           
-            <h1 class="display-3">COSTA COFFEE</h1>
-            <p class="lead"><b>Traditional Southern Drink with a Twist</b></p>
-            <a href="" class="btn btn-light">Reservation</a>
+            
+           
+			
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1 class="m-b-20"><strong> A Free Welcome Back Coffee</strong></h1>
+						<p class="m-b-40"><b>Traditional Southern Drink with a Twist</b></p>
+						<a href="" class="btn btn-light">Reservation</a>
+					</div>
+				</div>
+			</div>
             
       
 
@@ -100,7 +133,7 @@
                  <meter value="8" min="1" max="10"></meter>
              </div>
              <div>
-              <details>
+              <details id="Survey">
                 <summary>
                  
                    <h1 class="title single-title entry-title">Costa Coffee Customer Survey</h1>
